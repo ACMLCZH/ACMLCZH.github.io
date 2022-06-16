@@ -16,8 +16,11 @@ title: "Welcome to Zhehuan's homepage!"
   </div>
   <div class="main-item">
     <big><h3>Publications</h3></big>
-    <p class="main-text">
-    </p>
+    <div class="main-text">
+      {% for post in site.posts %}
+        {{ post.content }}
+      {% endfor %}
+    </div>
   </div>
   <div class="main-item">
     <big><h3>Selected Honors and Awards</h3></big>
