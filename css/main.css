@@ -246,15 +246,15 @@ a:hover {
 
 .publication-item {
   clear: both;
-  padding-bottom: 11em;
+  padding-bottom: 10em;
 }
 .publication-cover {
-  max-width: 200px;
+  max-height: 200px;
   float: left;
 }
 .publication-info {
   height: 100%;
-  width: 60%;
+  max-width: 80%;
   float: left;
   line-height: inherit;
   margin-left: 1em;
