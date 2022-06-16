@@ -1,14 +1,10 @@
 
-
-
 .sidebar {
   float: left;
+  position: sticky;
+  top: 0;
   width: 14%;
-  height: 100%;
-  vertical-align: top;
-  -webkit-overflow-scrolling: touch;
-  overflow-y: auto;
-  overflow-x: hidden;
+  height: 1000px;
   margin-left: 2em;
   padding-left: 2.125em;
   padding-right: 2.125em;

@@ -9,13 +9,14 @@
   padding: 0;
 }
 
-html, body {
-  height: 100%;
+html {
   width: 100%;
+  min-height: 100%;
   -webkit-font-smoothing: antialiased;
 }
 
 body {
+  -webkit-font-smoothing: antialiased;
   color: #4a4a4a;
   background-color: #fafbfc;
   font-family: 'Raleway', Arial, sans-serif;
@@ -23,6 +24,7 @@ body {
   font-size: 0.85em;
   overflow-x: scroll;
   overflow-y: scroll;
+  clear: both;
 }
 
 a {
@@ -33,6 +35,10 @@ a {
 
 a img {
   outline: none;
+}
+
+h1, h2, h3 {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 a:hover {
@@ -78,9 +84,9 @@ a:hover {
 /*****************************************************************************/
 
 .site {
-  /* height: 100%; */
   width: 100%;
   line-height: 1.25em;
+  clear: both;
 }
 
 .title {
