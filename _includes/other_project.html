@@ -1,0 +1,24 @@
+
+<div class="publication-item">
+  <h3>{{ page.title }}</h3>
+  <div><img class="publication-cover" src="/images/{{ page.cover }}"></img></div>
+  <div class="publication-info">
+    <p>{{ page.author }}</p>
+    <p>{{ page.conference }}</p>
+    {% if page.article %}
+      [<a href="{{ page.article }}">Paper</a>]
+    {% endif %}
+
+    {% if page.project %}
+      [<a href="{{ page.project }}">Project</a>]
+    {% endif %}
+
+    {% if page.code %}
+      [<a href="{{ page.code }}">Code</a>]
+    {% endif %}
+
+    {% if page.video %}
+      [<a href="{{ page.video }}">Video</a>]
+    {% endif %}
+  </div>
+</div>
