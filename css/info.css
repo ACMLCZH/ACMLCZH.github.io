@@ -1,0 +1,76 @@
+
+/*****************************************************************************/
+/*
+/* Publications
+/*
+/*****************************************************************************/
+.publication-item {
+    font-size: 0.9em;
+    clear: both;
+    padding-top: 1em;
+}
+
+.publication-cover {
+    max-height: 200px;
+    width: 35%;
+    float: left;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.publication-info {
+    height: 100%;
+    width: 63%;
+    float: right;
+    line-height: inherit;
+}
+
+.publication-author {
+    margin-top: 0.2em;
+}
+
+.publication-conference {
+    margin-top: 0.2em;
+    font-weight: 1000;
+}
+
+.publication-links {
+    margin-top: 0.2em;
+}
+
+/*****************************************************************************/
+/*
+/* News
+/*
+/*****************************************************************************/
+.news-date {
+    font-style: italic;
+    font-weight: 560;
+}
+
+/*****************************************************************************/
+/*
+/* Awards
+/*
+/*****************************************************************************/
+.award-loc-time {
+    padding-left: 2em;
+    font-style: italic;
+}
+
+/*****************************************************************************/
+/*
+/* Internships
+/*
+/*****************************************************************************/
+.period-date {
+    font-style: italic;
+    font-weight: 560;
+}
+
+.internship-location {
+    font-style: italic;
+}
+
+.education-location {
+    font-style: italic;
+}

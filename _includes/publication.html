@@ -1,24 +1,29 @@
 
 <div class="publication-item">
-  <h3>{{ page.title }}</h3>
-  <div><img class="publication-cover" src="/images/{{ page.cover }}"></img></div>
+  <img class="publication-cover" src="{{ page.cover }}"></img>
   <div class="publication-info">
-    <p>{{ page.author }}</p>
-    <p>{{ page.conference }}</p>
-    {% if page.article %}
-      [<a href="{{ page.article }}">Paper</a>]
-    {% endif %}
+    <h3>{{ page.title }}</h3>
+    <p class="publication-author">{{ page.author }}</p>
+    <p class="publication-conference">{{ page.conference }}
+      {% if page.conference_level %}
+      <span style="color: red;">({{page.conference_level}})</span>{% endif %}
+    </p>
+    <p class="publication-links">
+      {% if page.article %}
+        [<a href="{{ page.article }}">Paper</a>]
+      {% endif %}
 
-    {% if page.project %}
-      [<a href="{{ page.project }}">Project</a>]
-    {% endif %}
+      {% if page.project %}
+        [<a href="{{ page.project }}">Project</a>]
+      {% endif %}
 
-    {% if page.code %}
-      [<a href="{{ page.code }}">Code</a>]
-    {% endif %}
+      {% if page.code %}
+        [<a href="{{ page.code }}">Code</a>]
+      {% endif %}
 
-    {% if page.video %}
-      [<a href="{{ page.video }}">Video</a>]
-    {% endif %}
+      {% if page.video %}
+        [<a href="{{ page.video }}">Video</a>]
+      {% endif %}
+    </p>
   </div>
 </div>

@@ -5,76 +5,53 @@
 /*****************************************************************************/
 
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 html {
-  width: 100%;
-  min-height: 100%;
-  -webkit-font-smoothing: antialiased;
+    width: 100%;
+    min-height: 100%;
+    -webkit-font-smoothing: antialiased;
 }
 
 body {
-  -webkit-font-smoothing: antialiased;
-  color: #4a4a4a;
-  background-color: #fafbfc;
-  font-family: 'Raleway', Arial, sans-serif;
-  font-weight: 400;
-  font-size: 0.85em;
-  overflow-x: scroll;
-  overflow-y: scroll;
-  clear: both;
+    -webkit-font-smoothing: antialiased;
+    color: #4a4a4a;
+    background-color: #fafbfc;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-weight: 400;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    clear: both;
 }
 
 a {
-  color: #8085C1;
-  text-decoration: none;
-  border: none;
+    color: #8085C1;
+    text-decoration: none;
+    border: none;
 }
 
 a img {
-  outline: none;
+    outline: none;
 }
 
 h1, h2, h3 {
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 a:hover {
-  color: #555;
-  border: none;
+    color: #555;
+    border: none;
 }
 
 .separator {
-  color: #555;
+    color: #555;
 }
 
-/*****************************************************************************/
-/*
-/* Home
-/*
-/*****************************************************************************/
 #logo {
-  max-width: 200px;
-  border-radius: 100%;
-}
-
-.posts a {
-  color: #444;
-}
-
-.posts a:hover {
-  color: #777;
-}
-
-.posts-list {
-  list-style-type: none;
-}
-
-.posts-list li {
-  text-align: center;
-  line-height: 1.75em;
+    max-width: 200px;
+    border-radius: 100%;
 }
 
 /*****************************************************************************/
@@ -82,228 +59,47 @@ a:hover {
 /* Site
 /*
 /*****************************************************************************/
-
 .site {
-  width: 100%;
-  line-height: 1.25em;
-  clear: both;
+    width: 100%;
+    line-height: 1.25em;
+    clear: both;
 }
 
 .title {
-  display: inline-block;
-  text-align: center;
-  line-height: 25px;
+    display: inline-block;
+    text-align: center;
+    line-height: 25px;
 }
 
 .posts {
-  border-top: 1px solid #e7e7e7;
-  margin-top: 1em;
-  padding-top: 1.5em;
-  padding-bottom: 1.25em;
-}
-
-/*****************************************************************************/
-/*
-/* Posts
-/*
-/*****************************************************************************/
-
-#date {
-  font-size: 16px;
-  padding-top: 0.25em;
-  margin-bottom: 2em;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: #787878;
-}
-
-#cover-photo-container,
-#info-container {
-  display: block;
-}
-
-#info-container {
-  margin-top: 3em;
-}
-
-#title {
-  color: #4a4a4a;
-  margin-bottom: 0.35em;
-  font-size: 3em;
-  line-height: 40px;
-  text-transform: uppercase;
-}
-
-.post {
-  line-height: 24px;
-  max-width: 725px;
-  clear: both;
-}
-
-.post h2 {
-  margin-top: 1.25em;
-  margin-left: -0.5em;
-  margin-bottom: 1.25em;
-}
-
-.post a,
-#about a {
-  border-bottom: 1px solid #8085C1;
-}
-
-.post a:hover {
-  border: none;
-}
-
-/* standard */
-.post pre {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .4em;
-}
-
-.post p {
-  font-family: 'Source Sans Pro', Arial, sans-serif;
-  font-size: 17px;
-  margin-bottom: 1.45em;
-  text-align: justify;
-}
-
-.post ul, .post ol {
-  margin-left: 2.35em;
-  margin-bottom: 1.25em;
-}
-
-.post code {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .2em;
-}
-
-.post pre code {
-  border: none;
-}
-
-/* terminal */
-.post pre.terminal {
-  border: 1px solid #000;
-  background-color: #333;
-  color: #FFF;
-}
-
-.post pre.terminal code {
-  background-color: #333;
-}
-
-/*****************************************************************************/
-/*
-/* Sidebar and Content
-/*
-/*****************************************************************************/
-
-.content {
-  vertical-align: top;
-  height: 100%;
-  -webkit-overflow-scrolling: touch;
-  overflow-y: scroll;
-  overflow-x: scroll;
-}
-
-.site-head {
-  clear: both;
-  padding-left: 5em;
-  padding-top: 3em;
-  padding-bottom: 3em;
+    border-top: 1px solid #e7e7e7;
+    margin-top: 1em;
+    padding-top: 1.5em;
+    padding-bottom: 1.25em;
 }
 
 .content {
-  padding-left: 2.125em;
+    vertical-align: top;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    padding-left: 2.125em;
 }
-
-.main-page {
-  font-size: 1.5em;
-  width: 70%;
-  float: left;
-  line-height: 2em;
-  padding-left: 5em;
-  padding-top: 3em;
-}
-
-.main-item {
-  margin-top: 2.5em;
-  margin-bottom: 2.5em;
-  clear: both;
-}
-.main-text {
-  border-top: 1px solid #e7e7e7;
-  margin-top: 0.7em;
-  padding-top: 0.7em;
-  clear: both;
-}
-.main-text ul {
-  padding-left: 1em;
-}
-
-.header {
-  text-align: center;
-  padding-top: 2.5em;
-  font-size: 1.1em;
-}
-
-.publication-item {
-  clear: both;
-  padding-bottom: 10em;
-}
-.publication-cover {
-  max-height: 200px;
-  float: left;
-}
-.publication-info {
-  height: 100%;
-  max-width: 80%;
-  float: left;
-  line-height: inherit;
-  margin-left: 1em;
-}
-
-.post-link {
-  margin-bottom: 0.75em;
-}
-
-.main-link:link, .main-link:visited, .main-link:hover {
-  color: #9CC1E7;
-}
-
-.post-title {
-  font-weight: 600;
-  font-size: 1.25em;
-  text-transform: uppercase;
-}
-
-.post-date {
-  color: #8a8a8a;
-  font-family: Monaco, "Courier New", monospace;
-  font-weight: 600;
-  font-size: 0.65em;
-  display: block;
-  text-transform: uppercase;
-}
-
 
 /*****************************************************************************/
 /*
 /* Colophon
 /*
 /*****************************************************************************/
-
 .colophon {
-  margin-top: 1.5em;
-  margin-bottom: 1.45em;
-  border-top: 1px dotted #e7e7e7;
+    margin-top: 1.5em;
+    margin-bottom: 1.45em;
+    border-top: 1px dotted #e7e7e7;
 }
 
 .colophon p {
-  margin-top: 1.25em;
-  font-size: 0.95em;
-  color: #777;
+    margin-top: 1.25em;
+    font-size: 0.95em;
+    color: #777;
 }

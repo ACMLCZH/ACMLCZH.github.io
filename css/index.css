@@ -1,0 +1,39 @@
+
+.main-page {
+    font-size: 1.1em;
+    font-weight: 500;
+    width: 70%;
+    float: left;
+    line-height: 1.75em;
+    padding-left: 3em;
+    padding-top: 3em;
+}
+
+.main-item {
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+    clear: both;
+}
+
+.main-text {
+    border-top: 1px solid #e7e7e7;
+    margin-top: 0.7em;
+    padding-top: 0.7em;
+    clear: both;
+}
+
+.main-text ul {
+    padding-left: 1em;
+}
+  
+.header {
+    text-align: center;
+    padding-top: 2.5em;
+    font-size: 1.1em;
+}
+  
+.main-link:link,
+.main-link:visited,
+.main-link:hover {
+    color: #9CC1E7;
+}

@@ -1,47 +1,81 @@
 ---
 layout: default
-title: "Welcome to Zhehuan's homepage!"
+title: "Zhehuan Chen - Homepage"
+custom_css:
+  - "/css/index.css"
+  - "/css/info.css"
 ---
 
 <div class="main-page">
   <h2>{{page.title}}</h2>
+
   <div class="main-item">
-    <big><h3>About Me</h3></big>
+    <h3 id="About Me">About Me</h3>
     <p class="main-text">
-      I am a fourth-year undergraduate student majoring in Computer Science at Peking University.
-      My research interests include robotics, computer vision, computer graphics, and data intelligence.
-      I am currently a research intern in <a href="https://cfcs.pku.edu.cn/english/">Center on Frontiers of Computing Studies (CFCS)</a>,
-      Peking University, supervised by <a href="https://zsdonghao.github.io/">Prof. Hao Dong</a>.
+      I am a first-year MSc student in Computer Science at the University of Massachusetts Amherst,
+      under the guidance of <span class="hyperlink" data-name="Chuang Gan">Prof. Chuang Gan</span>. My research interests span Robotics, Computer Graphics,
+      and Data Intelligence. Prior to my graduate studies, I earned my bachelor's degree from Peking University,
+      where I was an undergraduate member of the <span class="hyperlink" data-name="PKU CFCS">Center on Frontiers of Computing Studies (CFCS)</span>,
+      mentored by <span class="hyperlink" data-name="Hao Dong">Prof. Hao Dong</span>.
     </p>
   </div>
+
   <div class="main-item">
-    <big><h3>Publications</h3></big>
+    <h3 id="News">NEWS</h3>
     <div class="main-text">
-      {% for post in site.posts %}
+      <ul>
+        {% for post in site.categories.news %}
+          <li>{{ post.content }}</li>
+        {% endfor %}
+        <!-- <li> Dec 2024: Our project <span class="hyperlink" data-name="Genesis">Genesis</span> was released!!</i></li> -->
+      </ul>
+    </div>
+  </div>
+
+  <div class="main-item">
+    <h3 id="Publications">Publications</h3>
+    <div class="main-text">
+      {% for post in site.categories.publications %}
         {{ post.content }}
       {% endfor %}
     </div>
   </div>
-  <div class="main-item">
-    <big><h3>Honors and Awards</h3></big>
+
+  <!-- Other Projects like Ruihai -->
+
+  <div class="main-item" style="padding-top: 3em;">
+    <h3 id="Honors">Honors and Awards</h3>
     <div class="main-text">
       <ul>
-        <li> Star of Tomorrow Excellent Intern, <i>Microsoft Research Asia (MSRA) 2023</i></li>
-        <li> Study Excellence Award, <i>Peking University 2022</i></li>
-        <li> Peking University Scholarship Third Prize, <i>Peking University, 2021</i></li>
-        <li> Peking University Merit Student, <i>Peking University, 2021</i></li>
-        <li> Bronze medal in National Olympiad in Informatics (NOI), <i>China Computer Federation, 2018</i></li>
-        <li> Bronze medal in Asia-Pacific Informatics Olympiad (APIO), <i>China Computer Federation, 2018</i></li>
-        <li> First prize in National Olympiad in Informatics in Provinces (NOIP), <i>China Computer Federation, 2016, 2017, 2018</i></li>
+        {% for post in site.categories.awards %}
+          <li>{{ post.content }}</li>
+        {% endfor %}
       </ul>
     </div>
   </div>
+
   <div class="main-item">
-    <big><h3>Internships</h3></big>
+    <h3 id="Internships">Internships</h3>
     <div class="main-text">
       <ul>
-        <li> <i>Jul 2022 - Apr 2023</i>, Data Knowledge Intelligence Group, Microsoft Research Asia (MSRA), with <a href="https://www.microsoft.com/en-us/research/people/xilv/">Xiao Lv</a></li>
+        {% for post in site.categories.internships %}
+          <li>{{ post.content }}</li>
+        {% endfor %}
+        <!-- <li> <i>Jul 2022 - Apr 2023</i>, Data Knowledge Intelligence Group, Microsoft Research Asia (MSRA), </li> -->
       </ul>
     </div>
   </div>
+
+  <div class="main-item">
+    <h3 id="Educations">Educations</h3>
+    <div class="main-text">
+      <ul>
+        {% for post in site.categories.educations %}
+          <li>{{ post.content }}</li>
+        {% endfor %}
+        <!-- <li> <i>Jul 2022 - Apr 2023</i>, Data Knowledge Intelligence Group, Microsoft Research Asia (MSRA), supervised by <span class="hyperlink" data-name="Xiao Lv">Xiao Lv</span></li> -->
+      </ul>
+    </div>
+  </div>
+
 </div>
